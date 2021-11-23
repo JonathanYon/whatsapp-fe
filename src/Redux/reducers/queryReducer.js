@@ -1,19 +1,17 @@
-import { initialState } from "../store/index.js"
-import { ADD_QUERY } from "../actions/types.js"
-
+import { initialState } from "../store/index.js";
+import { ADD_QUERY } from "../actions/types.js";
 
 const queryValueReducer = (state = initialState.searchValue, action) => {
-    switch (action.type) {
-        case ADD_QUERY:
+  switch (action.type) {
+    case ADD_QUERY:
+      return {
+        ...state,
+        query: action.payload,
+      };
 
-            return {
-                ...state,
-                query: action.payload
-            }
+    default:
+      return state;
+  }
+};
 
-        default:
-            return state
-    }
-}
-
-export default queryValueReducer
+export default queryValueReducer;
