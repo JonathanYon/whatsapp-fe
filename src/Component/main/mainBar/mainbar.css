@@ -1,0 +1,9 @@
+#mainbar {
+  position: relative;
+  background-color: silver;
+}
+
+#mainbar #mainImage {
+  object-fit: cover;
+  width: 100%;
+}

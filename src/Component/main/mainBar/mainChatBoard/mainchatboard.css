@@ -1,0 +1,5 @@
+#mainchatboard {
+  background-color: white;
+  height: 88vh;
+  flex-direction: column-reverse;
+}
